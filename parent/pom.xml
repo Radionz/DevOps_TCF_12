@@ -15,19 +15,16 @@
         <versions.tomee.embedded>1.7.3</versions.tomee.embedded>
     </properties>
 
-<!--
 
 
  <modules>
 
-  </modules>
     <module>Entities</module>
-     <module>tcf-client</module>
+     <module>Cuisine</module>
     <module>RegistreClient</module>
     <module>Catalogue</module>
   </modules>
 
--->
 
     <profiles>
         <profile>
@@ -132,11 +129,12 @@
             <version>${versions.tomee.embedded}</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
+        <!-- <dependency>
             <groupId>fr.unice.polytech.isa</groupId>
             <artifactId>tcf-client</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+-->
         <dependency>
             <groupId>fr.unice.polytech.devops</groupId>
             <artifactId>Entities</artifactId>
@@ -152,12 +150,13 @@
             <artifactId>Cuisine</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-
+<!--
         <dependency>
             <groupId>fr.unice.polytech.devops</groupId>
             <artifactId>Catalogue</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+-->
 
     </dependencies>
 

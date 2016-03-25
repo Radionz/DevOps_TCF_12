@@ -11,11 +11,13 @@
     <groupId>fr.unice.polytech.devops</groupId>
     <artifactId>parent</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <relativePath>../../parent</relativePath>
   </parent>
 
 
-<!--
+
   <build>
+    <finalName>Cuisine</finalName>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -27,8 +29,8 @@
       </plugin>
     </plugins>
   </build>
-  <name>Cuisine</name>
-  <url>http://maven.apache.org</url>
+  
+
   <dependencies>
 
 
@@ -51,12 +53,8 @@
       <artifactId>javaee-api</artifactId>
       <version>6.0-6</version>
     </dependency>
-    <dependency>
 
-      <groupId>fr.unice.polytech.devops</groupId>
-      <artifactId>Entities</artifactId>
-      <version>1.0-SNAPSHOT</version>
-    </dependency>
+      
   </dependencies>
-  -->
+  
 </project>
