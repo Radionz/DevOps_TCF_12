@@ -1,0 +1,6 @@
+fr/unice/polytech/isa/tcf/CartTest.class
+fr/unice/polytech/isa/tcf/CatalogueTest.class
+fr/unice/polytech/isa/tcf/CustomerRegistryTest.class
+arquillian/AbstractTCFTest.class
+fr/unice/polytech/isa/tcf/CashierTest.class
+fr/unice/polytech/isa/tcf/KitchenTest.class
