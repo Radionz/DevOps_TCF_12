@@ -1,5 +1,8 @@
 package fr.unice.polytech.isa.tcf;
 
+import fr.unice.polytech.isa.tcf.components.CatalogueBean;
+import fr.unice.polytech.isa.tcf.components.carts.CartStatefulBean;
+import fr.unice.polytech.isa.tcf.components.carts.CartStatelessBean;
 import fr.unice.polytech.isa.tcf.components.customer.CustomerFinder;
 import fr.unice.polytech.isa.tcf.components.customer.CustomerRegistration;
 import fr.unice.polytech.isa.tcf.entities.Customer;
@@ -29,6 +32,9 @@ public abstract class AbstractTCFTest {
 				.addPackage(Customer.class.getPackage())
 				.addPackage(CustomerRegistration.class.getPackage())
 				.addPackage(CustomerFinder.class.getPackage())
+				.addPackage(CatalogueBean.class.getPackage())
+				.addPackage(CartStatefulBean.class.getPackage())
+				.addPackage(CartStatelessBean.class.getPackage())
 				// Interceptors
 				.addPackage(Logger.class.getPackage())
 				// Exceptions
