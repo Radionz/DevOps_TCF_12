@@ -22,7 +22,7 @@
         </dependency>
         <dependency>
             <groupId>fr.unice.polytech.isa</groupId>
-            <artifactId>customer-care</artifactId>
+            <artifactId>customer-utils</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>test</scope>
         </dependency>
