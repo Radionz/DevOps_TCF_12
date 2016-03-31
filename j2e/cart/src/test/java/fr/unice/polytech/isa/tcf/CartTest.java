@@ -2,6 +2,8 @@ package fr.unice.polytech.isa.tcf;
 
 // business imports
 
+import fr.unice.polytech.isa.tcf.components.customer.CustomerFinder;
+import fr.unice.polytech.isa.tcf.components.customer.CustomerRegistration;
 import fr.unice.polytech.isa.tcf.entities.Cookies;
 import fr.unice.polytech.isa.tcf.entities.Customer;
 import fr.unice.polytech.isa.tcf.entities.Item;
@@ -27,8 +29,10 @@ import static org.junit.Assert.assertEquals;
 public class CartTest extends AbstractTCFTest {
 
 	@EJB(name = "cart-stateless") private CartModifier cart;
-	@EJB CustomerRegistration registry;
-	@EJB CustomerFinder finder;
+	@EJB
+	CustomerRegistration registry;
+	@EJB
+	CustomerFinder finder;
 
 	private Customer john;
 
