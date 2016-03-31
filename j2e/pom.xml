@@ -11,10 +11,10 @@
 
     <modules>
         <module>core</module>
-        <module>customer-care</module>
+        <module>customer-utils</module>
         <module>webservices</module>
         <module>cart</module>
-        <module>payement</module>
+        <module>payment</module>
     </modules>
 
     <properties>
