@@ -50,14 +50,14 @@
     <repositories>
         <repository>
             <id>central</id>
-            <url>http://erebe-vm5.i3s.unice.fr/artifactory/libs-release-local</url>
+            <url>http://erebe-vm22.i3s.unice.fr/artifactory/libs-release-local</url>
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
         </repository>
         <repository>
             <id>snapshots</id>
-            <url>http://erebe-vm5.i3s.unice.fr/artifactory/libs-snapshot-local</url>
+            <url>http://erebe-vm22.i3s.unice.fr/artifactory/libs-snapshot-local</url>
             <releases>
                 <enabled>false</enabled>
             </releases>
@@ -66,14 +66,14 @@
     <pluginRepositories>
         <pluginRepository>
             <id>central</id>
-            <url>http://erebe-vm5.i3s.unice.fr/artifactory/plugins-release</url>
+            <url>http://erebe-vm22.i3s.unice.fr/artifactory/plugins-release</url>
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
         </pluginRepository>
         <pluginRepository>
             <id>snapshots</id>
-            <url>http://erebe-vm5.i3s.unice.fr/artifactory/plugins-snapshot</url>
+            <url>http://erebe-vm22.i3s.unice.fr/artifactory/plugins-snapshot</url>
             <releases>
                 <enabled>false</enabled>
             </releases>
@@ -84,7 +84,7 @@
         <repository>
             <id>snapshots</id>
             <name>TCF/Devops3</name>
-            <url>http://erebe-vm5.i3s.unice.fr/artifactory/libs-snapshot-local</url>
+            <url>http://erebe-vm22.i3s.unice.fr/artifactory/libs-snapshot-local</url>
         </repository>
     </distributionManagement>
 
