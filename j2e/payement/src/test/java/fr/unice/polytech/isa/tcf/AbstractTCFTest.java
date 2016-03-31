@@ -33,6 +33,7 @@ public abstract class AbstractTCFTest {
 				.addPackage(CashierBean.class.getPackage())
 				// Entities
 				.addPackage(KitchenBean.class.getPackage())
+				.addPackage(Payment.class.getPackage())
 				// Interceptors
 				.addPackage(Logger.class.getPackage())
 				// Exceptions
