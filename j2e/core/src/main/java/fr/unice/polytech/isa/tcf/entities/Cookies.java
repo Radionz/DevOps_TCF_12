@@ -11,7 +11,7 @@ public enum Cookies {
 
 	// Getters
 
-	public double getPriepoekijuce() { return price; }
+	public double getPrice() { return price; }
 	public String getName() { return name; }
 
 	Cookies(String value, double price) {
