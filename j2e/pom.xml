@@ -6,7 +6,7 @@
     <groupId>fr.unice.polytech.isa</groupId>
     <artifactId>tcf-backend</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>ISA :: The Cookie Factory :: J2E Backend</name>
+    <name>The Cookie Factory</name>
     <packaging>pom</packaging>
 
     <modules>
