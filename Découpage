@@ -1,0 +1,35 @@
+Découpage du serveur j2e:
+
+Premier Module:
+    Core avec toutes les entités + utils + Interceptors.logger
+
+Faire un module par Webservice
+
+
+A faire:
+
+Finir l'installation de NGinx
+Installer Jenkins
+Configurer NGinx pour pouvoir utiliser artefactory a la main puis également jenkins
+
+Tester de faire:
+1 Qui compile le serveur j2e, 1 autre le .Net et un autre le client, de récuperer une
+archive que l'on a pas compiler nous meme sur Artefactory et de faire marcher notre système avec ça.
+
+Continuer de découper l'application plus que ce que l'on à déja fait
+
+Faire un script qui effectue toute la chaine de build à partir des jar?
+Voir comment fonctionne le plugin maven qui va avec artefactory pour tout prendre en compte
+
+
+Des que le découpage sera fait, rajouter des tests d'intégrations (nos parties marchent individuellement, il faut tester que même builder sépparement, ca marche encore)
+
+mettre les tests avec leurs modules
+regarder les dépendances (A depend de B depend de C -> je mets A et B dans le pom de C)
+supprimer module de Arti (adecouper)
+
+
+DONE
+
+Corriger le problème de génération des WSDL  // Il suffit de lancer la commande mvn dans a decouper (qui contient les WS)
+Regenerer les nouvelles WSDL à placer dans le client // Pas besoin ce sont les memes
