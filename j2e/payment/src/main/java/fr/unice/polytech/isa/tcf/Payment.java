@@ -1,22 +1,18 @@
 package fr.unice.polytech.isa.tcf;
 
-
 import fr.unice.polytech.isa.tcf.entities.Customer;
 import fr.unice.polytech.isa.tcf.entities.Item;
+import fr.unice.polytech.isa.tcf.utils.BankAPI;
 import fr.unice.polytech.isa.tcf.exceptions.PaymentException;
+
 
 import javax.ejb.Local;
 import java.util.Set;
 
 @Local
-public interface CartModifier {
+public interface Payment {
 
-	boolean add(Customer c, Item item);
+	String payOrder(Customer customer, Set<Item> items) throws PaymentException ;
 
-	boolean remove(Customer c, Item item);
-
-	Set<Item> contents(Customer c);
-
-	String validate(Customer c) throws PaymentException;
-
+	void useBankReference(BankAPI bank);
 }
