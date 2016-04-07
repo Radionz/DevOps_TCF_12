@@ -1,3 +1,10 @@
+Dorian BLANC
+Manuel PAVONE
+Thibaut SORIANO
+
+erebe-vm22.i3s.unice.fr
+
+
 # The Cookie Factory (ISA Case study)
 
   * Author: Sébastien Mosser [mosser@i3s.unice.fr](mosser@i3s.unice.fr)
