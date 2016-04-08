@@ -40,7 +40,7 @@
     <repositories>
         <!-- Artifactory repository -->
         <repository>
-            <id>radionz-repository</id>
+            <id>snapshots</id>
             <url>http://erebe-vm22.i3s.unice.fr/artifactory/libs-snapshot/</url>
         </repository>
     </repositories>
