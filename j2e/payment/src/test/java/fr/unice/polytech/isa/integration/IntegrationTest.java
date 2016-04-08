@@ -33,20 +33,21 @@ public class IntegrationTest {
         assertTrue(cookiesAvailable.contains(stubs.customerCare.Cookies.CHOCOLALALA));
         assertTrue(cookiesAvailable.contains(stubs.customerCare.Cookies.DARK_TEMPTATION));
         assertTrue(cookiesAvailable.contains(stubs.customerCare.Cookies.SOO_CHOCOLATE));
+        System.out.printf("eeeeeeeee");
        try {
             //He registers
-            customerWs.register("Nicolas", "30896983");
+            customerWs.register("Dorian", "30896983");
             //He chooses cookies
             Item i = new Item();
             i.setCookie(stubs.cart.Cookies.CHOCOLALALA);
             i.setQuantity(10);
-            cartWs.addItemToCustomerCart("Nicolas", i);
+            cartWs.addItemToCustomerCart("Dorian", i);
             Item i2 = new Item();
             i2.setCookie(stubs.cart.Cookies.SOO_CHOCOLATE);
             i2.setQuantity(50);
-            cartWs.addItemToCustomerCart("Nicolas", i2);
+            cartWs.addItemToCustomerCart("Dorian", i2);
             //He wants to see what he has chosen
-            List<Item> cart  = cartWs.getCustomerCartContents("Nicolas");
+            List<Item> cart  = cartWs.getCustomerCartContents("Dorian");
            //Contains n'appelle pas la bonne version d'equals, on doit donc faire
            int cpt=0;
            for (Item item : cart)
@@ -55,13 +56,13 @@ public class IntegrationTest {
            assertEquals(2, cpt);
 
             //He took too many SOO_CHOCOLATE, he removes them all
-            cartWs.removeItemToCustomerCart("Nicolas", i2);
+            cartWs.removeItemToCustomerCart("Dorian", i2);
             //He checks if it has been removed
-            cart  = cartWs.getCustomerCartContents("Nicolas");
+            cart  = cartWs.getCustomerCartContents("Dorian");
            for (Item item: cart)
                 assertNotEquals(Cookies.SOO_CHOCOLATE, item.getCookie());
             //He now wants to pay
-            String orderID=cartWs.validate("Nicolas");
+            String orderID=cartWs.validate("Dorian");
             //After a while, he wants to track his order
             OrderStatus status=customerWs.track(orderID);
             assertEquals(OrderStatus.VALIDATED, status);
