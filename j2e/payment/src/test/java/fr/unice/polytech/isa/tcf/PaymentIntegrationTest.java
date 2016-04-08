@@ -1,4 +1,4 @@
-package fr.unice.polytech.isa.integration;
+package fr.unice.polytech.isa.tcf;
 
 
 import fr.unice.polytech.isa.tcf.AbstractTCFTest;
