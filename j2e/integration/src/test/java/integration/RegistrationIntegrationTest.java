@@ -15,7 +15,6 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 
 import javax.ejb.EJB;
-import javax.servlet.http.Cookie;
 
 import static junit.framework.TestCase.assertFalse;
 import static org.junit.Assert.assertEquals;
