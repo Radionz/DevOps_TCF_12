@@ -77,38 +77,5 @@ public class IntegrationTest {
         }
     }
 
-    @Test
-    public void customerValidateEmptyCart(){
-        try {
-            //The client registers registers
-            customerWs.register("Paul", "10896983");
-            //He now wants to pay
-            String orderID=cartWs.validate("Paul");
-            OrderStatus status=customerWs.track(orderID);
-            assertEquals(OrderStatus.VALIDATED, status);
-        } catch (AlreadyExistingCustomerException_Exception e) {
-            e.printStackTrace();
-        } catch (UnknownCustomerException_Exception e) {
-            e.printStackTrace();
-        } catch (PaymentException_Exception e) {
-            e.printStackTrace();
-        } catch (UnknownOrderId_Exception e) {
-            e.printStackTrace();
-        }
-    }
-    
-    @Test
-    public void customerShowNotExistingCart(){
-        try {
-            customerWs.register("Jean", "40896983");
-            //He wants to see what he has chosen
-            List<Item> cart  = cartWs.getCustomerCartContents("Jean");
-            assertTrue(cart.isEmpty());
-        } catch (AlreadyExistingCustomerException_Exception e) {
-            e.printStackTrace();
-        } catch (UnknownCustomerException_Exception e) {
-            e.printStackTrace();
-        }
 
-    }
 }
