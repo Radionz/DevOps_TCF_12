@@ -16,7 +16,7 @@ import java.util.Set;
 public abstract class CartBean implements CartModifier {
 
 	@EJB
-	protected Payment cashieer;
+	protected Payment cashier;
 
 	@Override
 	@Interceptors({CartCounter.class})
