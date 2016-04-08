@@ -1,7 +1,7 @@
-package fr.unice.polytech.isa.tcf;
+package integration;
 
 
-import fr.unice.polytech.isa.tcf.AbstractTCFTest;
+import arquillian.AbstractTCFTest;
 import fr.unice.polytech.isa.tcf.CustomerFinder;
 import fr.unice.polytech.isa.tcf.CustomerRegistration;
 import fr.unice.polytech.isa.tcf.Payment;
@@ -15,6 +15,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 
 import javax.ejb.EJB;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -23,8 +24,7 @@ import static org.junit.Assert.assertTrue;
 @RunWith(Arquillian.class)
 public class PaymentIntegrationTest extends AbstractTCFTest {
 
-	@EJB
-    private Payment cashier;
+	@EJB private Payment cashier;
 	@EJB private CustomerFinder finder;
 	@EJB private CustomerRegistration registration;
 
@@ -38,7 +38,7 @@ public class PaymentIntegrationTest extends AbstractTCFTest {
 		items.add(new Item(Cookies.DARK_TEMPTATION, 2));
 	}
 
-	@Test
+	@Test /*(expected = Exception.class)*/
 	public void integrationBetweenCustomersAndOrders() throws Exception {
 		registration.register("john", "1234-896983");
 		Customer retrieved = finder.findByName("john").get();
@@ -47,5 +47,6 @@ public class PaymentIntegrationTest extends AbstractTCFTest {
 		Order order = memory.getOrders().get(id);
 		assertTrue(retrieved.getOrders().contains(order));
 	}
+
 
 }
