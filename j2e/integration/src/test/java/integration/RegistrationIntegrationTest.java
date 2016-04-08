@@ -7,6 +7,7 @@ import fr.unice.polytech.isa.tcf.CustomerFinder;
 import fr.unice.polytech.isa.tcf.CustomerRegistration;
 import fr.unice.polytech.isa.tcf.entities.Cookies;
 import fr.unice.polytech.isa.tcf.entities.Customer;
+
 import fr.unice.polytech.isa.tcf.entities.Item;
 import org.jboss.arquillian.junit.Arquillian;
 import org.junit.Before;
