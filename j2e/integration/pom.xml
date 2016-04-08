@@ -36,15 +36,7 @@
         <artifactId>tcf-backend</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-
-    <repositories>
-        <!-- Artifactory repository -->
-        <repository>
-            <id>snapshots</id>
-            <url>http://erebe-vm22.i3s.unice.fr/artifactory/libs-snapshot/</url>
-        </repository>
-    </repositories>
-
+    
     <!-- Me -->
     <artifactId>integration</artifactId>
     <packaging>war</packaging>
