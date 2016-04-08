@@ -41,7 +41,7 @@
         <!-- Artifactory repository -->
         <repository>
             <id>radionz-repository</id>
-            <url>http://erebe-vm22.i3s.unice.fr/artifactory/TCF-J2E/</url>
+            <url>http://erebe-vm22.i3s.unice.fr/artifactory/libs-snapshot/</url>
         </repository>
     </repositories>
 
